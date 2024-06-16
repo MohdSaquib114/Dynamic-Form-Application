@@ -20,6 +20,7 @@ export default function Form() {
     });
 
     const handleNameInput = (event:ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+        
         setFormState(
           {  ...formState,
             fullName:event.target.value
