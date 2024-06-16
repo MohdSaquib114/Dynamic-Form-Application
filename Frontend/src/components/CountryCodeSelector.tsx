@@ -10,11 +10,11 @@ export default function CountryCodeSelector({ handleCodeSelect }:{handleCodeSele
     };
 
     return (
-        <div className='flex flex-col'>
-        <label >Select Country Code</label>
-        <select title='Country Code' value={selectedCode} onChange={handleSelect}>
+        <div className='flex flex-col gap-1'>
+        <label className='text-md font-medium' >Country Code</label>
+        <select className= 'rounded-sm p-1 border-2 focus:outline-none border-slate-700  shadow-[5px_5px_0px_0px_rgba(0,0,0,0.3)]' title='Country Code' value={selectedCode} onChange={handleSelect}>
             {countryCodes.map((country) => (
-                <option key={country.code} value={country.code}>
+                <option  key={country.code} value={country.code}>
                     {country.name}   ({country.code})
                 </option>
             ))}
