@@ -1,15 +1,19 @@
-import { useState } from "react";
-import Button from "./components/Button";
+
 import SelectComponent from "./components/SelectComponent";
+import Provider from "./components/Provider";
+import Form from "./components/Form";
 
    
 
 export default function App() {
   
   return (
-    <div className="h-screen text-slate-300 bg-sky-950">
 
+    <Provider>
+       <div className="h-screen text-slate-700 bg-slate-200">
         <SelectComponent  />
-    </div>
+        <Form />
+      </div>
+     </Provider>
   )
 }
