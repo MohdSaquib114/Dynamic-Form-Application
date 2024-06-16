@@ -17,7 +17,7 @@ export default function Button({type,title}:{type:string,title:string}) {
    className=" text-lg font-medium max-w-max
       border-2 border-slate-700
      bg-slate-300
-     px-10 py-2
+     px-14 py-1
       shadow-[5px_5px_0px_0px_rgba(0,0,0,0.3)] 
       md:px-14 md:py-4 
       hover:bg-slate-700
