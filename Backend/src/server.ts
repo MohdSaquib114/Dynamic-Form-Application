@@ -13,4 +13,4 @@ app.use(express.json())
 
 app.use("/api/v1", formRouter)
 
-app.listen(PORT)
+app.listen(PORT,()=>console.log("Server is running"))
