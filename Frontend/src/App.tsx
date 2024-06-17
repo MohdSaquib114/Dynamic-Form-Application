@@ -11,6 +11,7 @@ export default function App() {
 
     <Provider>
        <div className="h-screen text-slate-700 bg-slate-200">
+       
         <SelectComponent  />
         <Form />
       </div>

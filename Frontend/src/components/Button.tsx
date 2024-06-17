@@ -1,18 +1,14 @@
 import { useContext } from "react"
 import { ContextProvider } from "./Provider"
 
-export default function Button({type,title,handleClickProp}:{type?:string,title:string}) {
+export default function Button({type,title}:{type:string,title:string}) {
     const context = useContext(ContextProvider)
 
 
-     const handleClick = () => {
-      if(type){
-        handleClickProp(type)
-      }else{
-        handleClickProp()
-      }
-
-          }
+    const handleClick = () =>{
+      context?.setType(type);
+      context?.setVisibility((currentVs:boolean) => !currentVs )
+    }
 
   return (
    <button onClick={handleClick}
