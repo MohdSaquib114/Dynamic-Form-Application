@@ -19,7 +19,7 @@ type  rowType = {
         phone: string
     
 }
-route.get("/refresh",async (req:Request,res:Response) => {
+route.post("/refresh",async (req:Request,res:Response) => {
     try{
         const auth = await authenticate()
         const selectQuery = `SELECT * FROM form;`

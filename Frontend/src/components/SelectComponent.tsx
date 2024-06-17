@@ -18,7 +18,7 @@ export default function SelectComponent() {
     
  
 
-  return  <div className={`${context?.visibility?"hidden":"block"} flex flex-col p-10  items-center h-1/2 justify-between gap-16 sm:gap-00 `}>
+  return  <div className={`${context?.visibility?"hidden":"block"} flex flex-col p-10  items-center h-1/2 justify-between gap-20 sm:gap-00 `}>
             <button onClick={handleRefresh} className=" text-lg font-medium max-w-max border-2 border-slate-700 bg-slate-300  px-8 py-2 rounded-sm shadow-[5px_5px_0px_0px_rgba(0,0,0,0.3)]  hover:bg-slate-700 hover:text-slate-300">Refresh</button>
             <h1 className="md:text-5xl font-bold text-3xl ">
               SELECT A FORM
