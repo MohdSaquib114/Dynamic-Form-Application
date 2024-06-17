@@ -82,8 +82,8 @@ export default function Form() {
           if(!isValidPhoneNumber(phone,formState.countryCode)) throw new Error("Number is not in valid form")
         await axios.post('http://localhost:4062/api/v1/form',{ ...formState,type:context?.type});
         
-        
-          alert('Data submitted successfully!');
+    alert('Data submitted successfully!');
+    context?.setVisibility(crnVis=>!crnVis)
 
         } catch (error) {
             if(error instanceof Error){

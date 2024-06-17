@@ -6,7 +6,7 @@ import  formRouter from "./route/form"
 require("dotenv").config();
 
 
-const PORT = Number(process.env.PORT) | 3030;
+const PORT = process.env.PORT;
 
 const app = express();
 databaseInit()
@@ -15,4 +15,4 @@ app.use(cors())
 
 app.use("/api/v1", formRouter)
 
-app.listen(PORT,()=>console.log("Server is running"))
+app.listen(PORT,()=>console.log(`Server is running on ${PORT}`))
