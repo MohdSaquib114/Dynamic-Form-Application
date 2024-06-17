@@ -8,7 +8,7 @@ export default function SelectComponent() {
     
     async function handleRefresh(){
       try{
-        await axios.get("http://localhost:4062/api/v1/refresh")
+        await axios.get("http://localhost:4000/api/v1/refresh")
         alert("Sheet synchronized with database succesfully")
 
       }catch(e){

@@ -80,7 +80,7 @@ export default function Form() {
             const {code,name,phone} = formState
           if(code == "" || name == "" || phone == "" ) throw new Error("Fields are empty")
           if(!isValidPhoneNumber(phone,formState.countryCode)) throw new Error("Number is not in valid form")
-        await axios.post('http://localhost:4062/api/v1/form',{ ...formState,type:context?.type});
+        await axios.post('http://localhost:4000/api/v1/form',{ ...formState,type:context?.type});
         
     alert('Data submitted successfully!');
     context?.setVisibility(crnVis=>!crnVis)
